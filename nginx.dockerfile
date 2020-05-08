@@ -17,5 +17,6 @@ COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
 # you can use $(pwd) to reference your local folder where your running Docker commands from.
 # If you're on Windows there are several options to point to the folder. See my following post:
 # https://blog.codewithdan.com/2017/10/25/docker-volumes-and-print-working-directory-pwd/
-
+# PS version 
+# docker run -p 8080:80 -v ${PWD}/dist:/usr/share/nginx/html nginx-angular
 # docker run -p 8080:80 -v $(pwd)/dist:/usr/share/nginx/html nginx-angular
